@@ -34,6 +34,6 @@ struct ST {
     int mid = (b + e) >> 1, l = n << 1, r = l | 1;
     int L = query(l, b, mid, i, j);
     int R = query(r, mid + 1, e, i, j);
-    return L+R;
+    return L + R;
   }
-}; // Declare: ST sgt;
+};  // Declare: ST sgt;
