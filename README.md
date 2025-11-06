@@ -1,3 +1,5 @@
+### This script and process is taken from hamza-28(github) and modified a bit.
+
 ### Required Packages to compile and make the template
 
 * python3
