@@ -1,25 +1,37 @@
-### This script and process is taken from hamza-28(github) and modified a bit.
+### This script and process has been taken from hamza-28(github) and has been modified.
 
 ### Required Packages to compile and make the template
 
 * python3
-
+For apt based distributions like debian/ubuntu/mint/pop_os!/...
   ```bash
   sudo apt-get install python3
   ```
+For dnf based distributions like RHEL/CentOS/Fedora/...
+  ```bash
+  sudo dnf install python3
+  ```
 * texlive-full
-
+apt based distros:
   ```bash
   sudo apt-get install texlive-full
   ```
-
+dnf based distros:
+  ```bash
+  sudo dnf install texlive-scheme-full
+  ```
 * pygments
-
+apt based distros
   ```bash
   sudo apt-get install python3-pip
   pip3 install pygments
   ```
-
+dnf based distros
+  ```bash
+  sudo dnf install python3-pip
+  pip3 install pygments
+  ```
+  
 * **If failed:**
 
   You will have to create virtual environment in your project directory and acticate it
