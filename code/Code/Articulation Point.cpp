@@ -14,14 +14,16 @@ void dfs(int u, int p = -1) {
     } else {
       dfs(v, u);
       low[u] = min(low[u], low[v]);
-      if (low[v] >= tin[u] && p != -1)
+      if (low[v] >= tin[u] && p != -1){
         IS_CUTPOINT(u);
+      }
       ++children;
     }
   }
   // if no vertex below v can reach u or higher → removing u disconnects that subtree
-  if (p == -1 && children > 1)
+  if (p == -1 && children > 1){
     IS_CUTPOINT(u);
+  }
 }
 void find_cutpoints() {
   timer = 0;
@@ -29,7 +31,8 @@ void find_cutpoints() {
   tin.assign(n, -1);
   low.assign(n, -1);
   for (int i = 0; i < n; ++i) {
-    if (!vis[i])
+    if (!vis[i]){
       dfs(i);
+    }
   }
 }

@@ -1,7 +1,6 @@
 const int N = 2e5 + 10;  // max string size
 int len[N], lnk[N]{-1}, last, sz = 1;
 unordered_map<char, int> to[N];
-
 void add(char c) {
   int cur = sz++;
   len[cur] = len[last] + 1;
